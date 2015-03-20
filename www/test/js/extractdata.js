@@ -6,12 +6,8 @@
 /*jslint node: true */
 "use strict";
 
-
-/**
+/**1
  * For testing purposes
  * @param args
  * @returns {{location: string, time: string}}
  */
-dexit.msdk.extract = function(args) {
-    return { "location":"here", "time":"now"}
-};

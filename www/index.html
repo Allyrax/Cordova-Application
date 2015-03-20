@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
@@ -8,21 +10,22 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>DEX-SDK Mobile App Template</h1>
-            <!-- use simlar structure for your own player reference-->
 
-            <!--  <iframe class="player" id="playerFrame" src="http://player.dexit.co/player/?arg=something"></iframe> -->
-            <!-- Uncomment to test data extraction plugin is working-->
-            <!-- <iframe id="playerFrame" src="test/iframetest.html"></iframe> -->
-
-        </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/sdk.js"></script>
-        <!-- Sample extract data plugin.  Uncomment for testing -->
-        <!--<script type="text/javascript" src="test/js/extractdata.js"></script> -->
+
+    </head>
+    <body>
+        <div class="app">
+            <div id="classDiv">
+
+            </div>
+            <!-- use simlar structure for your own player reference-->
+
+            <iframe class="player" id="playerFrame" src="http://player.dexit.co/player/?course=techs1"></iframe>
+            <!-- Uncomment to test data extraction plugin is working-->
+            <p id="geolocation">Finding geolocation...</p>
+        </div>
     </body>
 </html>

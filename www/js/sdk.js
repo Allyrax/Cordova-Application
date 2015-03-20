@@ -157,4 +157,28 @@ dexit.msdk.XKbPluginManager.prototype.registerPlugin = function (options) {
 
 };
 
+var here = "50 -120";
+var now = "474898981";
+
+
+dexit.msdk.extract = function(args) {
+    navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    alert(here + " " + now);
+    return { "location": here, "time": now}
+};
+
+
+// onSuccess Geolocation
+    //
+function onSuccess(position) {
+    here = position.coords.latitude + " " + position.coords.longitude;
+    now = position.timestamp;
+}
+
+    // onError Callback receives a PositionError object
+    //
+function onError(error)  {
+    alert('code: '    + error.code    + '\n' +
+          'message: ' + error.message + '\n');
+}
 
