@@ -120,8 +120,8 @@ app.initialize();
          },
          data: {
              "grant_type":"password",
-             "username":"mlaing7@uwo.ca",
-             "password":"D@7......."
+             "username":"",
+             "password":""
          },
          success: function(data, status){
              //Add buttons
